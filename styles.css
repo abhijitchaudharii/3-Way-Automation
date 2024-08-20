@@ -19,14 +19,15 @@ html {
     /* color: #000000; */
     font-size: 18px;
 }
+
 .navbar {
     /* background-color: #102b49; */
-    background-color: #f4f4f4  ;
+    background-color: #f4f4f4;
 }
 
 .nav-link {
     /* color: #ffff; */
-    color:black ;
+    color: black;
 }
 
 .navbar-nav {
@@ -39,20 +40,27 @@ html {
     margin: 0 15px;
 }
 
+
 .navbar-brand {
     margin-right: auto;
 }
 
 .navbar-brand img {
-    height: 40px;
     width: auto;
+    height: 40px;
+    margin-left: 20px;
 }
 
 /* Hero-Section */
 /* -------------------- */
-.carousel-item {
+/* .carousel-item {
     height: 600px;
-    background-color: #343a40;
+    background-color: #000;
+    position: relative;
+} */
+.carousel-inner{
+    height: 600px;
+    background-color: #000;
     position: relative;
 }
 
@@ -88,7 +96,7 @@ html {
 
 .carousel-caption p {
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 25%;
 }
 
 /* ---------------------- */
@@ -181,21 +189,23 @@ html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s, transform 0.3s;
 }
+
 .service-card {
-    text-align: center; /* center the content horizontally */
-  }
-  
-  .service-icon {
-    display: inline-block; 
+    text-align: center;
+    /* center the content horizontally */
+}
+
+.service-icon {
+    display: inline-block;
     margin: 20px auto;
-  }
-  
-  .service-icon img {
-    width: 100px; 
-    height: 100px; 
-    object-fit: cover; 
+}
+
+.service-icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     /* border-radius: 50%;  */
-  }
+}
 
 .service-card h3 {
     font-size: 18px;
@@ -262,7 +272,7 @@ html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
-    
+
 }
 
 .product-card h3 {
@@ -277,12 +287,13 @@ html {
     color: #666;
     word-wrap: break-word;
 }
+
 .product-card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
-    cursor: pointer; 
-    border-color: #ccc; 
-  }
+    cursor: pointer;
+    border-color: #ccc;
+}
 
 /* brand-logo */
 #product-brand {
@@ -487,19 +498,39 @@ footer {
 
 /* ----------------------  */
 @media (max-width: 768px) {
+    #carouselExampleCaption{
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: 400px;
 
+    }
+    .carousel-item img{
+        object-fit: contain;
+    }
     .carousel-caption {
-        padding-bottom: 50px;
-        bottom: 20px;
-        /* Adjust this value to bring the caption back into view */
+        padding-bottom: 20px;
+        bottom: 10px;
+        text-align: center;
+        margin-bottom: -60px;
+       
     }
 
     .carousel-caption h1 {
-        font-size: 32px;
+        text-align: center;
+        max-width: 290px;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .carousel-caption p {
         font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* about */
@@ -509,21 +540,45 @@ footer {
 
     /* Service-Section */
     .service-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .service-card h3 {
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .service-card p {
+        font-size: 8px;
+    }
+
+    .service-icon img {
+        width: 60px;
+        height: 60px;
     }
 
     /* Product-Section */
     .product-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: 170px 170px 170px;
     }
 
+    .grid-container{
+        justify-content: center;
+    }
     .product-card {
         width: 100%;
+        height: auto;
+    }
+
+    .product-card h3 {
+        font-size: 12px;
+        word-wrap: break-word;
+        
+    }
+
+    .product-card p {
+        font-size: 8px;
+        margin-top: auto;
+       
     }
 
     /* mission-section */
@@ -534,29 +589,60 @@ footer {
 
     /* Brand-logo */
     .brand-logo {
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: flex;
     }
 
     .brand-img {
         flex-basis: 50%;
+    }
+    .brand-img img{
+        max-width: 100px;
     }
 }
 
 
 /* ------------------------- */
 @media (max-width: 480px) {
+    #carouselExampleCaption{
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+    /* .carousel-item{
+        width: 100%;
+        height: 300px;
+        padding-left: 0;
+        padding-right: 0;
+    } */
+    .carousel-inner{
+        width: 100%;
+        height: 259px;
+
+    }
+    .carousel-item img{
+        object-fit: contain;
+    }
     .carousel-caption {
         padding-bottom: 20px;
         bottom: 10px;
-        /* Adjust this value to bring the caption back into view */
+        text-align: center;
+        margin-bottom: -60px;
+        
     }
 
     .carousel-caption h1 {
+        text-align: center;
+        max-width: 290px;
         font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .carousel-caption p {
         font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* ---------------- */
@@ -569,26 +655,76 @@ footer {
 
     .about-text {
         padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center;
     }
+    .about-text p{
+        font-size: 12px;
+    }
+    .about-title{
+        padding-bottom: 0px;
+    }
+
 
     /* Service-Section */
     .service-grid-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
-    /* Product-Section */
-    .product-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    .service-card h3 {
+        font-size: 12px;
     }
 
+    .service-card p {
+        font-size: 8px;
+    }
+
+    .service-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Product-Section */
+    .product-grid-container {
+        grid-template-columns: 160px 160px;
+    }
+
+    .grid-container{
+        justify-content: center;
+    }
     .product-card {
         width: 100%;
+    
+    }
+
+    .product-card h3 {
+        font-size: 12px;
+        word-wrap: break-word;
+        
+    }
+
+    .product-card p {
+        font-size: 8px;
+        margin-top: auto;
+       
     }
 
     /* Mission-Section */
     .mission,
     .vission {
         flex-basis: 100%;
+    }
+
+    .mission h1,
+    .vission h1 {
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+
+    .mission p,
+    .vission p {
+        font-size: 8px;
     }
 
     /* Brand-Logo */
