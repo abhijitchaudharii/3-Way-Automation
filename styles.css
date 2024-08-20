@@ -718,22 +718,29 @@ footer {
 
     .mission h1,
     .vission h1 {
-        font-size: 22px;
+        font-size: 24px;
         padding-bottom: 5px;
     }
 
     .mission p,
     .vission p {
-        font-size: 8px;
+        font-size: 14px;
     }
 
     /* Brand-Logo */
     .brand-logo {
+        /* flex-wrap: nowrap; */
         padding: 10px;
     }
 
     .brand-img {
         flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .brand-img img{
+
+        max-width: 90px;
     }
 
     /* footer  */
