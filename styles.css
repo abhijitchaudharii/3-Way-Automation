@@ -46,9 +46,11 @@ html {
 }
 
 .navbar-brand img {
-    width: auto;
-    height: 40px;
-    margin-left: 20px;
+    /* width: auto;
+    height: 40px; */
+    width: 140px;
+    height: 80px;
+    margin-left: 80px;
 }
 
 /* Hero-Section */
@@ -143,7 +145,7 @@ html {
 }
 
 .about-text p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -215,8 +217,9 @@ html {
 }
 
 .service-card p {
-    font-size: 16px;
+    font-size: 14px;
     color: #ccc;
+    text-align: center;
 }
 
 .service-card:hover {
@@ -283,7 +286,7 @@ html {
 }
 
 .product-card p {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
     word-wrap: break-word;
 }
@@ -352,6 +355,7 @@ html {
 
 .mission p,
 .vission p {
+    text-align: center;
     font-size: 17px;
 }
 
@@ -386,7 +390,6 @@ footer {
     background-color: #102b49;
     color: #fff;
     padding: 10px;
-    text-align: center;
 }
 
 .footer-container {
@@ -403,9 +406,12 @@ footer {
 }
 
 .logo img {
-    width: 100px;
+    /* width: 100px;
+    height: 100px; */
+    width: 200px;
     height: 100px;
 }
+
 
 .company-description {
     width: 200px;
@@ -414,13 +420,14 @@ footer {
 }
 
 .company-description p {
-    font-size: 16px;
-    color: #fff;
+    font-size: 14px;
+    color: #B3BCD3;
     padding-top: 10px;
+    text-align: left;
 }
 
 .useful-links li {
-    text-align: center;
+    text-align: left;
 }
 
 .useful-links,
@@ -434,6 +441,7 @@ footer {
 .contact-info h4 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .useful-links ul,
@@ -450,13 +458,14 @@ footer {
 
 .useful-links a,
 .social-media-links a {
-    color: #fff;
+    color: #B3BCD3;
     text-decoration: none;
 }
 
 .useful-links a:hover,
 .social-media-links a:hover {
-    color: #ccc;
+    /* color: #ccc; */
+    color: #4f80ff;
 }
 
 .social-media-links ul {
@@ -475,29 +484,38 @@ footer {
 }
 
 .contact-info p {
-    font-size: 16px;
-    color: #fff;
+    font-size: 14px;
+    color: #B3BCD3;
     margin-bottom: 0px;
-    /* padding-top: 10px; */
+    text-align: left;
+}
+.contact-info i{
+    padding-right: 10px;
 }
 
 .contact-info a {
-    color: #fff;
+    color: #B3BCD3;
     text-decoration: none;
 }
 
 .copyright {
     margin-top: 10px;
-    font-size: 14px;
-    color: #fff;
+    margin-bottom: 10px;
+
 }
 
 .copyright p {
-    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+
+}
+.footer-divider{
+    background-color: #B3BCD3;
 }
 
 /* ----------------------  */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     #carouselExampleCaption{
         width: 100%;
         height: 400px;
@@ -515,14 +533,14 @@ footer {
         padding-bottom: 20px;
         bottom: 10px;
         text-align: center;
-        margin-bottom: -60px;
+        margin-bottom: 0px;
        
     }
 
     .carousel-caption h1 {
         text-align: center;
-        max-width: 290px;
-        font-size: 24px;
+        max-width: 360px;
+        font-size: 32px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -586,6 +604,10 @@ footer {
     .vission {
         flex-basis: 90%;
     }
+    .mission p, .vission p{
+        font-size: 17px;
+        text-align: center;
+    }
 
     /* Brand-logo */
     .brand-logo {
@@ -609,12 +631,6 @@ footer {
         height: 400px;
         margin-top: 20px;
     }
-    /* .carousel-item{
-        width: 100%;
-        height: 300px;
-        padding-left: 0;
-        padding-right: 0;
-    } */
     .carousel-inner{
         width: 100%;
         height: 259px;
@@ -747,7 +763,9 @@ footer {
     .contact-info p {
         margin-bottom: 0px;
         padding-top: 0px;
+        /* text-align: left; */
     }
+    
 
 
 }
